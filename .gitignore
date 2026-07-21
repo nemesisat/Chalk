@@ -1,0 +1,31 @@
+# Dependencies / build output
+node_modules
+.next
+out
+*.tsbuildinfo
+.DS_Store
+
+# Secrets — never commit
+.env*
+
+# Local agent / editor artifacts (not part of the project)
+.claude/
+.codebase-memory/
+.hermes/
+
+# Generated media / recordings (the demo video lives on YouTube, not the repo)
+output/
+video-assets/
+
+# Planning, strategy, prompt, and submission-prep docs.
+# These stay on your machine but are NOT published to the repo.
+*-Prompt*.md
+*-Prompts*.md
+Chalk-Master-Strategy.md
+Chalk-Record-Day-Kit.md
+Chalk-Submission-Kit.md
+Chalk_OpenAI_Build_Week_Strategy.docx.md
+OpenAI-BuildWeek-Battle-Plan.md
+SUBMISSION.md
+SUBMISSION-STORY.md
+SUBMISSION-VOICEOVER.md

@@ -1,0 +1,23 @@
+[Unit]
+Description=Chalk Next.js application
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/chalk
+Environment=NODE_ENV=production
+Environment=PORT=3000
+EnvironmentFile=/home/ubuntu/chalk/.env.local
+ExecStart=/usr/bin/npm run start
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target
